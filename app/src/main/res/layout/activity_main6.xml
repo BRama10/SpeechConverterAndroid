@@ -1,9 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bull_background_pic"
     tools:context=".MainActivity6">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="15dp">
+
+
+        <EditText
+            android:id="@+id/text"
+            style="@style/EditTextStyleWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="17dp"
+            android:layout_toLeftOf="@id/button"
+            android:hint="Tap to Speak"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/translatedText"
+            style="@style/EditTextStyleWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:layout_marginRight="15dp"
+            android:hint="Translated Text Will Show Here"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="#F9F8FA"
+            android:backgroundTint="#F9F8FA"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_mic_black_off" />
+
+        <Button
+            android:id="@+id/toggleButton"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="420dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/common_google_signin_btn_text_light_focused"
+            android:padding="10dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="375dp"
+            android:prompt="@string/spinner_title" />
+
+        <Button
+            android:id="@+id/translateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:layout_marginRight="15dp"
+            android:hint="[HINDI]"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/speakBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:layout_marginRight="15dp"
+            android:hint="[Speak Aloud]"
+            android:padding="10dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
